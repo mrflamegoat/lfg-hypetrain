@@ -57,7 +57,8 @@ Train.prototype.tickCooldown = function () {
 	remainingTime.value--;
 	nodecg.sendMessage('cooldownTick', {
 		remainingTime: remainingTime.value,
-		elapsedTime: elapsedTime.value
+		elapsedTime: elapsedTime.value,
+		passengers: passengers.value
 	});
 
 	if (remainingTime.value <= 0) {
